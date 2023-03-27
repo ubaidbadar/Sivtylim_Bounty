@@ -3,6 +3,7 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
+import BreakFast from "./pages/Breakfast";
 import Home from "./pages/Home";
 import Music from "./pages/Music";
 
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     {
         path: "/music",
         element: <Music />
+    },
+    {
+        path: "/breakfast",
+        element: <BreakFast />
     }
 ]);
 
