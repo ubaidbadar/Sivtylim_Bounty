@@ -1,0 +1,23 @@
+.list {
+    @apply list-none flex justify-center;
+
+    li {
+        @apply flex-1 md:flex-0;
+    }
+
+    a {
+        @apply md:px-4 py-2 block text-center border-y-4 border-transparent my-[1px];
+
+        &:active {
+            @apply bg-black bg-opacity-5;
+        }
+
+        &[class *="active"],
+        &:hover {
+            @apply bg-black bg-opacity-10;
+        }
+        &[class *="active"] {
+            @apply border-b-current;
+        }
+    }
+}
