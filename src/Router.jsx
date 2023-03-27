@@ -4,12 +4,17 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import Home from "./pages/Home";
+import Music from "./pages/Music";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Home />,
     },
+    {
+        path: "/music",
+        element: <Music />
+    }
 ]);
 
 
